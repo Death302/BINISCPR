@@ -24,8 +24,8 @@ try:
     time.sleep(5)
 
     # Perform Login
-    driver.find_element(By.NAME, 'username').send_keys("mrsoftwares")
-    driver.find_element(By.NAME, 'password').send_keys("Rozroznewpass*00")
+    driver.find_element(By.NAME, 'username').send_keys("USERNAME")
+    driver.find_element(By.NAME, 'password').send_keys("PASSWORD")
     driver.find_element(By.XPATH, "//button[@type='submit']").click()
 
     # Wait for login to complete
@@ -37,8 +37,8 @@ try:
 
     # Advanced Search and fill fields
     driver.find_element(By.ID, 'advancedSearch').click()
-    driver.find_element(By.ID, 'memberKeywords').send_keys("Lawyer")
-    Select(driver.find_element(By.ID, 'memberIdCountry')).select_by_visible_text('India')
+    driver.find_element(By.ID, 'memberKeywords').send_keys("KEYWORD")
+    Select(driver.find_element(By.ID, 'memberIdCountry')).select_by_visible_text('LOCATION')
     driver.find_element(By.ID, 'searchConnections').click()
     time.sleep(5)
 
